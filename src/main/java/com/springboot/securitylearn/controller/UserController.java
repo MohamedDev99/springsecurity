@@ -23,7 +23,6 @@ public class UserController {
 
     @GetMapping("/{username}")
     public User getUser(@PathVariable("username") String username){
-        String name = username;
         return userService.getUser(username);
     }
 
